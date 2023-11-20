@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-family: 'Public Sans', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+:root {
+    /* BG */
+    --bg-section: #1B262F;
+    --bg-btn: #BA4270;
+    --bg-body: #EDF3F8;
+    /* TEXT COLOR */
+    --main-color: #36536B;
+}
+
+body {
+    background: var(--bg-body);
+    color: var(--main-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    padding: 15px 50px ;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.primary-btn {
+    padding: 16px 24.5px 14px 26.5px;
+    border-radius: 30px;
+    background: var(--bg-btn);
+    border: 2px solid transparent;
+    color: #fff;
+    font-weight: 700;
+}
+
+.primary-btn:hover {
+    border: 2px solid var(--bg-btn);
+    color: var(--bg-btn);
+    background: transparent;
+}
+
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0%;
+    height: 100vh;
+    max-height: 100vh;
+    margin-top: 86px;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 620px;
+}
+
+.showcase > div {
+    flex: 1;
+}
+
+.showcase-left h1 {
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 72px;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 21px;
+}
+
+form {
+    position: relative;
+    max-width: 445px;
+}
+
+.showcase form input {
+    padding: 16px 27px 14px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    outline: none;
+    max-width: 445px;
+    min-width: 340px;
+}
+
+.showcase form input::placeholder {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--main-color);
+    opacity: 0.5;
+}
+
+.showcase form .primary-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 47px;
+}
+
+.showcase form .primary-btn:hover {
+    background: #ba4270dc;
+    color: #fff;
+}
+
+p {
+    margin-top: 16px;
+    margin-left: 27px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    opacity: 0.8;
+}
